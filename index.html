@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+    <title> Slider Based Simple Interest Calculator</title>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" >Slider Based Simple Interest Calculator</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+    <label for="">Principal amount</label>
+      <!-- Principal amount slider  -->
+    <input type="range" min="1" max="10000" value="1" class="principalSlider">
+    <!-- create an element to show the value of the slider  -->
+    <h2 class="principalValue">$ 1</h2>
+  
+    <label for="">Number of years</label>
+      <!-- Number of years slider  -->
+    <input type="range" min="1" max="20" value="1" class="yearSlider">
+    <!-- create an element to show the value of the slider  -->
+    <h2 class="yearValue">1 year(s)</h2>
+  
+  
+    <label for="">Rate of interest</label>
+      <!-- Rate of interest slider  -->
+    <input type="range" min="1" max="100" value="1" class="interestSlider">
+    <!-- create an element to show the value of the slider  -->
+    <h2 class="interestValue">1 %</h2>
+  
+    <label for="">Rate of interest calculated (Principal amount * Years * Interest /100)</label>
+    <h2 class="calcIntValue">$ 0</h2>
+  
+    <label for="">Total amount to be paid (Rate of interest + Principal amount)</label>
+    <h2 class="calcPrincValue">$ 0</h2>
+  
+    <label for="">Monthly installment (Total amount / Number of month)</label>
+    <h2 class="monthInstValue">$ 0</h2>
+  
+  </div>
+  
+  </div>
+
+
+
+
+
+
+  <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
+
+
+
